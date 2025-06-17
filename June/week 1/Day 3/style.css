@@ -1,0 +1,162 @@
+
+/* id selector "#" */
+#para1{
+ background-color: blueviolet;
+}
+
+/* class selector "." */
+.para2{
+    background-color: brown;
+}
+
+/* Tag name selector */
+p{
+  /* font-size: 2rem; */
+}
+
+
+/* p,div{
+    color: chartreuse;
+} */
+
+/* Universal selector */
+*{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+/* Descedent selector */
+/* div p{
+    color: darkmagenta;
+} */
+
+/* direct child */
+
+/* div > p{
+    background-color: blue;
+} */
+
+/* div + p{
+    background-color: blueviolet;
+} */
+
+/* div~ p{
+    background-color: crimson;
+} */
+
+#box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/ginger-maine-coon-kitten-running-on-lawn-in-royalty-free-image-1719608142.jpg?crop=1xw:0.84415xh;0,0.185xh&resize=1200:*");
+    background-position: center;
+    background-size: cover;
+}
+
+#box-model{
+    width: 150px;
+    /* height: 150px; */
+    border: 2px solid blue;
+    padding: 10px 20px 30px 40px;
+    margin-top:20px ;
+    margin-left: 40px
+}
+
+/* pseudo class selector 
+    1.hover
+    2.active
+    3.focus   //input field
+    4.first-child
+    5.last-child
+    6.nth-child()
+    */
+
+    #box-model:hover{
+        background-color: red;
+    }
+
+    #box-model:active{
+        background-color: yellow;
+    }
+
+    input{
+        background-color: indianred;
+    }
+    input:focus{
+        background-color: green;
+    }
+
+    ul li:first-child{
+        background-color: red;
+    }
+
+    ul li:last-child{
+        background-color: green;
+    }
+
+    ul li:nth-child(3){
+        background-color: brown;
+    }
+
+    ul li:nth-child(odd){
+        color: chartreuse;
+    }
+
+    ul li:nth-child(even){
+        font-size: 1.2rem;
+    }
+
+    /* Display property */
+     /* 1.block */
+    /* 2.inline */
+
+h3{
+    background-color: red;
+    display: inline;
+    width: 400px;
+    
+}
+
+b{
+    background-color: green;
+    display: block;
+    width: 200px;
+}
+
+strong{
+    background-color: blue;
+    display: inline-block;
+    width: 300px;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    /* main axis center */
+    justify-content: center; 
+    /*  cross axis center */
+    align-items: center;   
+}
+
+.flex-container{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+   
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box{
+    /* width: 50px; */
+    height: 50px;
+    border: 1px solid blue;
+     border-radius: 20px;
+     text-align: center;
+}
+
+
+
